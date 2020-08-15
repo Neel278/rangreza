@@ -5,5 +5,8 @@ Welcome
 @endsection
 
 @section('content')
-hello
+<div id="app">
+    <app-component />
+</div>
+
 @endsection
