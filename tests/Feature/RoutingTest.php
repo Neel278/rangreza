@@ -8,15 +8,12 @@ use Tests\TestCase;
 
 class RoutingTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function testExample()
-    {
-        $response = $this->get('/');
+    use RefreshDatabase;
 
-        $response->assertStatus(200);
+    /** @test **/
+    public function a_user_can_see_index_page()
+    {
+        $this->withoutExceptionHandling();
+        $this->get('/')->assertStatus(200);
     }
 }

@@ -1,7 +1,5 @@
-@yield('header')
-
-@yield('title')
+@extends('includes.header')
 
 @yield('content')
 
-@yield('footer')
+@extends('includes.footer')
